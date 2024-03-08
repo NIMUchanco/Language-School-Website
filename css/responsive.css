@@ -1,0 +1,770 @@
+/* Desktop size */
+@media only screen and (max-width: 1350px) {
+    /* ABOUT */
+    .description {
+        gap: 30px;
+    }
+
+    .description-card {
+        width: calc((100% - 60px) / 3);
+    }
+
+    /* Table */
+    th, td {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 1275px) {
+    /* WAVE */
+    .wave-2 {
+        top: 800px;
+        right: -500px
+    }
+    .wave-3 {
+        left: -600px
+    }
+    
+    /* ABOUT */
+    .description {
+        gap: 20px;
+    }
+    
+    .description-card {
+        width: calc((100% - 40px) / 3);
+        padding: 30px 20px;
+    }
+
+    /* Table */
+    th, td {
+        padding: 8px;
+    }
+
+    /* FOOTER */
+    .footer-nav:nth-child(2) a {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1170px) {
+    p {
+        font-size: 18px;
+    }
+
+    /* My Lesson */
+    .lesson-wrap {
+        gap: 30px;
+    }
+
+    .lesson-card {
+        width: calc((100% - 60px) / 3);
+    }
+
+    /* Classrom */
+    .teacher-img {
+        width: 50%;
+    }
+
+    /* CTA */
+    .cta-flex {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    /* WAVE */
+    .wave-box::before,
+    .wave-box::after {
+        width: 120%;
+    }
+    .wave-4 {
+        display: block;
+    }
+
+    /* Language bar*/
+    .lang-bar {
+        padding: 20px;
+    }
+
+    .language img,
+    .language .dot {
+        width: 50px;
+        height: 35px;
+    }
+
+    .language .dot img {
+        width: 30px;
+        height: 8px;
+        margin-bottom: 10px;
+    }
+
+    .language p {
+        margin-left: 10px;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 30px 0;
+    }
+
+    .description-card {
+        width: 45%;
+        padding: 40px 30px;
+    }
+
+    /* My Lesson */
+    .lesson-wrap {
+        gap: 20px;
+    }
+    
+    .lesson-card {
+        width: calc((100% - 40px) / 3);
+    }
+
+     /* Classrom */
+    .teacher-img {
+        width: 60%;
+        margin-top: 5px;
+    }
+
+    /* CTA */
+    .cta-flex {
+        gap: 0;
+        padding-left: 100px;
+    }
+    .cta-img {
+        width: 50%;
+    }
+
+    /* FOOTER */
+    footer-nav p,
+    .footer-icons p {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    /* HEADER*/
+    .logo-image {
+        width: 100px;
+    }
+
+    .nav-menu {
+        gap: 5%;
+    }
+
+    .nav-btn {
+        font-size: 20px;
+    }
+
+    /* BANNER */
+    .text-box {
+        max-width: 675px;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    /* WAVE */
+    .wave-4 {
+        top: 2800px;
+        right: -800px;
+    }
+
+    /* ABOUT */
+    .description-card {
+        width: calc((100% - 20px) / 2);
+        padding: 30px 20px;
+    }
+
+    /* Classroom */
+    .teacher-img {
+        width: 70%;
+    }
+    .price-btn {
+        gap: 15px;
+    }
+    .price-btn p {
+        font-size: 16px;
+    }
+
+    .book-btn {
+        padding: 7px 12px;
+    }
+
+    /* FOOTER */
+    .footer-nav-menu {
+        gap: 65px;
+    }
+}
+
+/* Tablet size */
+@media only screen and (max-width: 965px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Globe */
+    .globe {
+        width: 250px;
+        height: 250px;
+        top: -300px;
+    }
+
+    /* WAVE */
+    .wave-box::before,
+    .wave-box::after {
+        width: 150%;
+    }
+    .wave-4 {
+        top: 3000px;
+        right: -700px;
+    }
+    .wave-5 {
+        display: block;
+    }
+
+    /* Language bar*/
+    .lang-bar {
+        width: 90%;
+        gap: 32px;
+        border-radius: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 100px;
+        top: -220px
+    }
+
+    .language img,
+    .language .dot {
+        width: 65px;
+        height: 45px;
+    }
+
+    .language .dot img {
+        width: 45px;
+        height: 10px;
+        margin-bottom: 2px;
+    }
+
+    select {
+        top: -220px;
+        left: 50%;
+        width: 30%;
+    }
+
+    .selection::after {
+        top: -205px;
+        left: 75%;
+    }
+
+    /* ABOUT */
+    .description-card {
+        width: 80%;
+        padding: 50px;
+    }
+    .description h3 {
+        display: block;
+        margin: 30px auto 20px auto;
+    }
+
+    /* My Lesson */
+    .lesson-card {
+        width: calc((100% - 20px) / 2);
+    }
+
+    /* Classroom */
+    .classroom-wrap {
+        flex-direction: column;
+    }
+
+    .teacher-card {
+        width: 100%;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    .teacher-img {
+        width: 30%;
+    }
+
+    .price-btn {
+        gap: 20px;
+    }
+    .price-btn p {
+        font-size: 18px;
+    }
+
+    .book-btn {
+        padding: 10px 20px;
+    }
+
+    .schedule-card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* CTA */
+    .cta-flex {
+        gap: 10px;
+    }
+    .textarea h2 {
+        margin-bottom: 10px;
+    }
+    .textarea h3 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .textarea p {
+        font-size: 20px;
+    }
+    .vibe-btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    .footer-nav p,
+    .footer-icons p {
+        font-size: 20px;
+    }
+    .footer-nav a {
+        font-size: 20px;
+    }
+    .footer-nav:nth-child(2) a {
+        font-size: 18px;
+    }
+    .icons {
+        gap: 8px
+    }
+    .copyright p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    /* Language bar*/
+    .lang-bar {
+        padding: 20px 40px;
+    }
+
+    /* Count */
+    .count-card {
+        width: 30%;
+    }
+
+    .count-card .number {
+        font-size: 50px;
+    }
+
+    .count-card .number p {
+        font-size: 50px;
+    }
+
+    /* CTA */
+    .textarea h2 {
+        margin-bottom: 10px;
+    }
+    .textarea h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .textarea p {
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+    .footer-nav-menu {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    /* HEADER */
+    .openbtn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: -1000px;
+        top: 75px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 127, 80, .7);
+        width: 100vw;
+        height: 100vh;
+        transition: .8s;
+        z-index: 3;
+    }
+
+    .nav-btn {
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    /* BANNER */
+    .text-box h1 {
+        overflow: visible;
+        white-space: normal;
+        border-right: none;
+        animation: none;
+    }
+
+    /* Classroom*/
+    .teacher-img {
+        width: 35%;
+    }
+
+    /* CTA */
+    .cta-flex {
+        gap: 0px;
+        padding-top: 10px;
+    }
+    .cta .vibe-btn {
+        margin-top: 10px;
+    }
+    .cta-img {
+        width: 55%;
+    }
+    .cta-img img {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    .footer-nav p,
+    .footer-icons p {
+        font-size: 18px;
+    }
+    .footer-nav a {
+        font-size: 18px;
+    }
+    .footer-nav:nth-child(2) a {
+        font-size: 16px;
+    }
+    .footer-icons a {
+        font-size: 25px;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    /* WAVE */
+    .wave-box::before,
+    .wave-box::after {
+        width: 180%;
+    }
+
+    /* Language bar*/
+    .lang-bar {
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .language img,
+    .language .dot {
+        width: 50px;
+        height: 35px;
+    }
+
+    .language .dot img {
+        width: 30px;
+        height: 8px;
+        margin-bottom: 10px;
+    }
+
+    select {
+        text-indent: 1px;
+    }
+
+    /* ABOUT */
+    .description-card {
+        width: 90%;
+    }
+
+    /* Count */
+    .count-card {
+        width: 35%;
+    }
+    
+    /* Classroom */
+    .teacher-img {
+        width: 40%;
+    }
+    .teacher-text h4 {
+        font-size: 18px;
+    }
+
+    .teacher-text p {
+        margin-bottom: 5px;
+    }
+
+    .price-btn {
+        gap: 15px;
+    }
+    .price-btn p {
+        font-size: 16px;
+    }
+
+    .book-btn {
+        padding: 7px 12px;
+    }
+
+    /* CTA */
+    .cta-img {
+        width: 65%;
+    }
+    .textarea h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .textarea p {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    .footer-nav-menu {
+        gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    /* Classroom */
+    .teacher-img {
+        width: 45%;
+    }
+
+    /* Globe */
+    .globe {
+        top: -280px;
+        left: 30px;
+    }
+
+    /* CTA */
+    .cta-img {
+        width: 75%;
+    }
+    .cta-flex {
+        padding-left: 70px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 25px 0 5px 0;
+    }
+    .footer-nav-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-nav p,
+    .footer-icons p {
+        margin-bottom: 5px;
+    }
+    .footer-nav a,
+    .footer-icons a {
+        margin-bottom: 3px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* BANNER */
+    .text-box h1 {
+        font-size: 35px;
+    }
+
+    /* WAVE */
+    .wave-box::before,
+    .wave-box::after {
+        width: 200%;
+    }
+    .wave-2 {
+        top: 1000px;
+        right: -300px;
+    }
+    .wave-3 {
+        top: 2400px;
+    }
+    .wave-4 {
+        top: 3500px;
+        right: -600px;
+    }
+    .wave-5 {
+        top: 4700px;
+    }
+    .wave-6 {
+        display: block;
+    }
+
+    /* MODAL */
+    .modal,
+    .signup-modal {
+        padding: 50px;
+        width: 400px;
+    }
+
+    /* ABOUT */
+    .description-card {
+        width: 100%;
+    }
+
+    /* Count */
+    .count-card {
+        width: 40%;
+    }
+
+    /* My Lesson */
+    .lesson-card {
+        width: 80%;
+    }
+
+    /* Classroom */
+    .teacher-card {
+        flex-direction: column;
+    }
+    .teacher-img {
+        width: 50%;
+    }
+    .teacher-text {
+        width: 90%;
+    }
+    .teacher-text h4 {
+        margin: auto;
+    }
+    .teacher-text p {
+        margin-bottom: 10px;
+    }
+
+    /* CTA */
+    .cta-flex {
+        padding-left: 50px;
+    }
+    .cta-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 530px)  {
+    h3 {
+        font-size: 17px;
+    }
+
+    /* WAVE */
+    .wave-box::before,
+    .wave-box::after {
+        width: 250%;
+    }
+
+    /* Language bar */
+    .lang-bar {
+        top: -220px;
+        padding: 30px;
+        border-radius: 140px;
+    }
+
+    /* Classroom */
+    .teacher-img {
+        width: 60%;
+    }
+
+    /* Globe */
+    .globe {
+        width: 220px;
+        height: 220px;
+        top: -250px;
+        left: 25px;
+    }
+
+    /* CTA */
+    .cta-img {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px)  {
+    /* WAVE */
+    .wave-4 {
+        right: -500px;
+    }
+
+    /* MODAL */
+    .modal,
+    .signup-modal {
+        padding: 40px;
+        width: 380px;
+    }
+
+    /* Classroom */
+    .teacher-img {
+        width: 65%;
+    }
+
+    /* CTA */
+    .cta-img {
+        width: 100%;
+    }
+    .textarea h2 {
+        margin-bottom: 5px;
+    }
+}
+
+/* Responsive horizontal */
+@media (orientation: landscape) and ( max-height: 860px ) {
+    body {
+        flex-direction: row;
+    }
+
+    .globe {
+        top: -320px;
+        left: 30px;
+    }
+}
+
+@media (orientation: landscape) and ( max-height: 800px ) {
+    body {
+        flex-direction: row;
+    }
+
+    .globe {
+        width: 250px;
+        height: 250px;
+        top: -275px;
+    }
+}
+
+@media (orientation: landscape) and ( max-height: 650px ) {
+    body {
+        flex-direction: row;
+    }
+
+    .globe {
+        top: -250px;
+    }
+}
+
+@media (orientation: landscape) and ( max-height: 600px ) {
+    body {
+        flex-direction: row;
+    }
+
+    .globe {
+        width: 200px;
+        height: 200px;
+        top: -220px;
+        left: 20px;
+    }
+}

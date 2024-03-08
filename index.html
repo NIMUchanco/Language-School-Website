@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project - Maiko Matsuoka</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FONTAWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="top">
+    <!-- HEADER-->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-flex">
+                <div class="logo">
+                    <img class="logo-image" src="images/logo.png" alt="LOGO">
+                </div>
+
+                <nav class="nav-menu">
+                    <a class="nav-btn" href="#section1"><span>About</span></a>
+                    <a class="nav-btn" href="#section2"><span>Lesson</span></a>
+                    <a class="nav-btn" href="#section3"><span>Classroom</span></a>
+                    <a class="nav-btn login-btn login-show"><span>Log in</span></a>
+                </nav>
+
+                <!--Menu for small screen size-->
+                <div class="openbtn"><span></span><span></span><span></span></div>
+
+                <!-- LOG IN BTN -->
+                <div class="login-open"><span></span><span></span><span></span></div>
+                <div id="nav-mask"></div>
+            </div>
+        </div>
+    </header>
+    <!-- ./ HEADER-->
+
+
+    <!-- LOG IN MODAL-->
+    <div class="overlay-bl"></div>
+    <div class="login-modal-wrap">
+        <div class="modal">
+            <div class="close-modal">
+                <i class="fa fa-2x fa-times"></i>
+            </div>
+            <div class="login-form">
+                <h3>Log in</h3>
+                <p>Need a new account?</p>
+                <a class="signup-show">Create an account</a>
+            </div>
+            <form action="">
+                <input type="text" placeholder="user name">
+                <input type="password" placeholder="password">
+                <button class="book-btn" type="button">Log in</button>
+            </form>
+        </div>
+    </div>
+    <!-- ./ LOG IN MODAL -->
+
+    <!-- SIGN UP MODAL-->
+    <div class="signup-modal-wrap">
+        <div class="signup-modal">
+            <div class="close-modal">
+                <i class="fa fa-2x fa-times"></i>
+            </div>
+            <div class="login-form signup-from">
+                <h3>Sign up</h3>
+            </div>
+            <form action="">
+                <input type="email" placeholder="email">
+                <input type="text" placeholder="user name">
+                <input type="password" placeholder="password">
+                <button class="book-btn" type="button">Sign up</button>
+            </form>
+        </div>
+    </div>
+    <!-- ./ SIGN UP MODAL -->
+
+    <main>
+        <!-- TOP -->
+        <section class="banner">
+            <video src="images/surf.mp4" autoplay loop muted></video>
+            <div class="screen"></div>
+            <div class="text-box">
+                <h1>Dive into a world of languages!</h1>
+            </div>
+        </section>
+        <!-- ./ TOP -->
+
+        <div class="globe fadeIn">
+            <div class="globe-text">
+                <h3>Start your journey now</h3>
+                <a class="vibe-btn signup-show">Sign up</a>
+            </div>
+        </div>
+
+        <!-- Wave circle animation -->
+        <div class="wave-box wave-1"></div>
+        <div class="wave-box wave-2"></div>
+        <div class="wave-box wave-3"></div>
+        <div class="wave-box wave-4"></div>
+        <div class="wave-box wave-5"></div>
+        <div class="wave-box wave-6"></div>
+
+        <!-- SECTION 1 ABOUT -->
+        <div class="overlay"></div>
+        <section class="about" id="section1">
+            <div class="container">
+                <!-- Language bar -->
+                <div class="lang-bar fadeIn">
+                    <a class="language" href="">
+                            <img src="images/flag/uk.png" alt="United Kingdom Flag">
+                            <p>English</p>
+                    </a>
+                    <a class="language" href="">
+                        <img src="images/flag/france.png" alt="Frech Flag">
+                        <p>Frech</p>
+                    </a>
+                    <a class="language" href="">
+                        <img src="images/flag/spain.png" alt="Spanish Flag">
+                        <p>Spanish</p>
+                    </a>
+                    <a class="language" href="">
+                        <img src="images/flag/china.png" alt="Chinese Flag">
+                    <p>Chinese</p>
+                    </a>
+                    <a class="language" href="">
+                        <img src="images/flag/germany.png" alt="German Flag">
+                        <p>German</p>
+                    </a>
+                    <a class="language more-btn">
+                        <div class="dot">
+                            <img src="images/flag/seemore.png" alt="See more icon">
+                        </div>
+                        <p>More</p>
+                    </a>
+                </div>
+                <!--Selection-->
+                <div class="selection">
+                    <select>
+                        <option value="0">Choose</option>
+                        <option value="1">Italian</option>
+                        <option value="2">Russian</option>
+                        <option value="3">Japanese</option>
+                        <option value="4">Hindi</option>
+                    </select>
+                </div>
+
+                <!-- Description -->
+                <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200">About us .</h2>
+                <div class="description">
+                    <div class="description-card study" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
+                        <img src="images/about/study.jpg" alt="Self-learning image">
+                        <h3>Self-learning system</h3>
+                        <p>Introducing our revolutionary self-learning language service which is a game changer for anyone looking to master a new language quickly and efficiently.</p>
+                        <a class="arrow-btn" href=""><span>Go to My lesson</span></a>
+                    </div>
+
+                    <div class="description-card teacher" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="images/about/teacher1.jpg" alt="Teacher image">
+                        <h3>Experienced teachers</h3>
+                        <p>Introducing our team of highly skilled and dedicated professional teachers who are passionate about helping you achieve your learning goals.</p>
+                        <a class="arrow-btn" href=""><span>Go to Classroom</span></a>
+                    </div>
+
+                    <div class="description-card service" data-aos="zoom-in-up" data-aos-duration="1300" data-aos-delay="300">
+                        <img src="images/about/service1.jpg" alt="Service image">
+                        <h3>Professional service</h3>
+                        <p>Introducing our professional service, a comprehensive solution designed to meet the specific needs and demands of businesses and individuals.</p>
+                        <a class="arrow-btn" href=""><span>Go to FAQ</span></a>
+                    </div>
+                </div>
+
+                <!-- Numbers Count Up-->
+                <div class="count-up fadeIn">
+                    <div class="count-card">
+                        <h3>Class a year</h3>
+                        <div class="number">
+                            <div class="counter counter-class">0</div>
+                            <p>K</p>
+                        </div>
+                    </div>
+
+                    <div class="count-card">
+                        <h3>Students taught</h3>
+                        <div class="number">
+                            <div class="counter counter-student">0</div>
+                            <p>K</p>
+                        </div>
+                    </div>
+
+                    <div class="count-card">
+                        <h3>Professional teachers</h3>
+                        <div class="number">
+                            <div class="counter counter-teacher">0</div>
+                            <p>K</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ SECTION 1 ABOUT -->
+
+        <!-- SECTION 2 MY LESSON -->
+        <section class="mylesson" id="section2">
+            <div class="container">
+                <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200">My lesson .</h2>
+                    <div class="lesson-wrap">
+                        <!--Leeson CARDS-->
+                        <div class="lesson-card" data-aos="flip-up" data-aos-duration="350" data-aos-delay="300">
+                            <h4>Lesson 1</h4>
+                            <div class="hover-mask">
+                                <p>Learn how to introduce yourself.</p>
+                                <a class="lesson-btn" href="">Start</a>
+                            </div>
+                        </div>
+
+                        <div class="lesson-card lesson2" data-aos="flip-up" data-aos-duration="350" data-aos-delay="400">
+                            <h4>Lesson 2</h4>
+                            <div class="hover-mask">
+                                <p>Learn numbers, colors, and common words.</p>
+                                <a class="lesson-btn" href="">Start</a>
+                            </div>
+                        </div>
+
+                        <div class="lesson-card lesson3" data-aos="flip-up" data-aos-duration="350" data-aos-delay="500">
+                            <h4>Lesson 3</h4>
+                            <div class="hover-mask">
+                                <p>Learn sentence structure.</p>
+                                <a class="lesson-btn" href="">Start</a>
+                            </div>
+                        </div>
+
+                        <div class="lesson-card lesson4" data-aos="flip-up" data-aos-duration="350" data-aos-delay="600">
+                            <h4>Lesson 4</h4>
+                            <div class="hover-mask">
+                                <p>Describe your daily routines.</p>
+                                <a class="lesson-btn" href="">Start</a>
+                            </div>
+                        </div>
+
+                        <div class="lesson-card lesson5" data-aos="flip-up" data-aos-duration="350" data-aos-delay="700">
+                            <h4>Lesson 5</h4>
+                            <div class="hover-mask">
+                                <p>Describe people and things.</p>
+                                <a class="lesson-btn" href="">Start</a>
+                            </div>
+                        </div>
+
+                        <div class="lesson-card lesson6" data-aos="flip-up" data-aos-duration="350" data-aos-delay="800">
+                            <h4>Lesson 6</h4>
+                            <div class="hover-mask">
+                                <p>Describe your experience.</p>
+                                <a class="lesson-btn" href="">Start</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Lesson BTN-->
+                    <div class="seemore-btn fadeIn">
+                        <a class="arrow-btn" href="">See more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ SECTION 2 MY LESSON -->
+
+        <!-- SECTION 3 CLASSROOM -->
+        <section class="classroom" id="section3">
+            <div class="container">
+                <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200">Classroom .</h2>
+                    <!-- Teacher 1-->
+                    <div class="classroom-wrap">
+                        <div class="teacher-card" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="teacher-img">
+                                <img src="images/teachers/teacher2.jpg" alt="Teacher photo">
+                            </div>
+                            <div class="teacher-text">
+                                <h4>Emily</h4>
+                                <p>I'm a dedicated language instructor committed to your success in mastering a new language. With my engaging
+                                teaching style and proven methods, I'll guide you through grammar intricacies.</p>
+                                <div class="price-btn">
+                                    <p>$60 &sol; 1h</p>
+                                    <a class="book-btn" href="">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-card" data-aos="fade-up-left" data-aos-duration="1000">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                        <th>Sun</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>04:00 - 08:00</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 12:00</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 16:00</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:00 - 20:00</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ./Teacher 1-->
+                    <!-- Teacher 2-->
+                    <div class="classroom-wrap">
+                        <div class="teacher-card" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="teacher-img">
+                                <img src="images/teachers/teacher3.jpg" alt="Teacher photo">
+                            </div>
+                            <div class="teacher-text">
+                                <h4>Daniel</h4>
+                                <p>I'm an enthusiastic language instructor here to guide you on your language learning journey. With my interactive approach and tailored lessons, we'll dive into grammar, expand your vocabulary.</p>
+                                <div class="price-btn">
+                                    <p>$30 &sol; 1h</p>
+                                    <a class="book-btn" href="">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-card" data-aos="fade-up-left" data-aos-duration="1000">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                        <th>Sun</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>04:00 - 08:00</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 12:00</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 16:00</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:00 - 20:00</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ./Teacher 2-->
+                    <!-- Teacher 3-->
+                    <div class="classroom-wrap">
+                        <div class="teacher-card" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="teacher-img">
+                                <img src="images/teachers/teacher4.jpg" alt="Teacher photo">
+                            </div>
+                            <div class="teacher-text">
+                                <h4>Nadia</h4>
+                                <p>I'm a devoted language instructor, ready to ignite your passion for learning. Through engaging lessons and
+                                immersive activities, we'll unravel the intricacies of language together.</p>
+                                <div class="price-btn">
+                                    <p>$40 &sol; 1h</p>
+                                    <a class="book-btn" href="">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-card" data-aos="fade-up-left" data-aos-duration="1000">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                        <th>Sun</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>04:00 - 08:00</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 12:00</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 16:00</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16:00 - 20:00</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td class="circle">&#9711;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                        <td>&#10005;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ./Teacher 3-->
+                    <!--Classroom BTN-->
+                    <div class="seemore-btn fadeIn">
+                        <a class="arrow-btn" href="">See more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ SECTION 3 CLASSROOM -->
+
+        <!-- SECTION 4 CTA -->
+        <section class="cta fadeIn">
+            <div class="container">
+                <div class="cta-flex">
+                    <div class="textarea">
+                        <h2>Free trial</h2>
+                        <h3>Counseling & Free trial lesson</h3>
+                        <p>Participate free sessions!</p>
+                        <a class="vibe-btn signup-show">Try now</a>
+                    </div>
+                    <div class="cta-img">
+                        <img src="images/cta.png" alt="Photo of woman">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ SECTION 4 CTA -->
+
+        <!-- Back BTN -->
+        <div class="back-button">
+            <a class="back-btn" href="#top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-nav-wrap">
+                    <nav class="footer-nav-menu">
+                        <div class="footer-nav">
+                            <p>Links</p>
+                            <a href="#section1">About</a>
+                            <a href="#section2">Lesson</a>
+                            <a href="#section3">Classroom</a>
+                        </div>
+                        <div class="footer-nav">
+                            <p>Contact</p>
+                            <a href=""><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;123 ABC Street, Suite 1000, Brookline, MA, 01234</a>
+                            <a href=""><i class="fa-solid fa-phone"></i>&nbsp;123-456-7890</a>
+                            <a href=""><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;support@abc.com</a>
+                        </div>
+                        <div class="footer-icons">
+                            <p>Follow Us</p>
+                            <div class="icons">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="copyright">
+                        <p>&copy; 2023 Maiko Matsuoka</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--JS-->
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js" defer></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <!--AOS js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
